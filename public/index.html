@@ -1,14 +1,23 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title></title>
+    <title>Node And Express</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 </head>
+
 <body>
-	<form action="http://localhost:3000" method="GET" class="form-horizontal">
-		<label for=""></label>
-		<input type="text">
-		<label for=""></label>
-		<input type="text">
-	</form>
+    <form class="form-inline" action="http://localhost:3000/userForm" method="GET">
+        <div class="form-group">
+            <label>First Name</label>
+            <input type="text" class="form-control" placeholder="Jan" name="first_name">
+        </div>
+        <div class="form-group">
+            <label>Last Name</label>
+            <input type="text" class="form-control" placeholder="Kowalski" name="last_name">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+    </form>
 </body>
+
 </html>

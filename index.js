@@ -1,13 +1,15 @@
 const express = require('express');
 const app = express();
-const path = require('path');
 
 app.use(express.static('public'));
 
-let root = path.resolve(__dirname, 'public');
+app.get('/userForm', function(req, res) {
+	const response = {
+		firstName: req.query.first_name,
+		lastName: req.query.last_name,
+	};
 
-app.get('/', function(req, res) {
-	res.sendFile(root + '/main.html');
+	res.send(JSON.stringify(response, null, 4));
 });
 
 app.get('*', function(req, res) {
