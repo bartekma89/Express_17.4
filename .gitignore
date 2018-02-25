@@ -1,0 +1,4 @@
+node_modules/
+public/main.html
+public/*.jpeg
+package-lock.json
