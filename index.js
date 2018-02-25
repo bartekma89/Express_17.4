@@ -9,7 +9,7 @@ app.get('/userForm', function(req, res) {
 		lastName: req.query.last_name,
 	};
 
-	res.send(JSON.stringify(response, null, 4));
+	res.send(`<pre>${JSON.stringify(response, null, 4)}</pre>`);
 });
 
 app.get('*', function(req, res) {
