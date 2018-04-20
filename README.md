@@ -1,1 +1,5 @@
-# Express\npm install -> npm index
+# Express
+
+Serve static files
+
+npm init -> npm install -> npm index
